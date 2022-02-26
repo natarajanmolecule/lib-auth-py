@@ -7,8 +7,8 @@ setup(
     description = 'First release of lib auth in python',
     author = 'Natarajan Kumar',
     author_email = 'natarajan@albertinvent.com',
-    url = 'https://github.com/MoleculeEngineering/lib-auth-py.git',
-    download_url = 'https://github.com/MoleculeEngineering/lib-auth-py/archive/refs/tags/0.1.0.tar.gz',
+    url = 'https://github.com/natarajanmolecule/lib-auth-py.git',
+    download_url = 'https://github.com/natarajanmolecule/lib-auth-py/archive/refs/tags/0.1.0.tar.gz',
     keywords = ['jwt', 'auth'],
     classifiers = [],
 )
