@@ -4,7 +4,7 @@ from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from fastapi import Request, HTTPException, Response, status, Depends
 # from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 import jose.jwt as jwt
-import secMgr
+from lib_auth_py import secMgr
 import os
 import traceback as tb
 import json
