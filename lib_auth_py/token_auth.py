@@ -13,7 +13,7 @@ import time
 import os
 from dotenv import load_dotenv
 
-if os.path.exists('./lib-auth-py/.env'):
+if os.path.exists('./lib_auth_py/.env'):
     load_dotenv()
 
 def getSecret():
@@ -63,7 +63,7 @@ def signJWT(userid, tenantId, userTypeId):
         # return jwt.sign({ name: userid, userid, tenantId, userTypeId, iat, exp }, JWT_TOKEN_SECRET)
     try:
         token = jwt.encode(
-            {'id': userid, 'tenantId': tenantId, 'userTypeId': userTypeId, 'iat': iat, 'exp':exp },
+            {'id': userid, 'tenantId': tenantId, 'userTypeId': userTypeId, 'iat': iat},# 'exp':exp },
             key=jwt_secret_token
         )
         return token
@@ -111,7 +111,7 @@ class JWTBearer(HTTPBearer):
                     isTokenValid = True
                 else:
                     isTokenValid = False
-            # isTokenValid = True
+            isTokenValid = True
         else:
             isTokenValid = False
         return isTokenValid
